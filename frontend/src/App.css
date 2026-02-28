@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  background-color: #f4f7f6;
+  color: #333;
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+.dashboard-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+h1 {
+  color: #2c3e50;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  color: #7f8c8d;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.session-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.session-card {
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  background: white;
+  transition: transform 0.2s;
+}
+
+.session-card:hover {
+  transform: translateY(-2px);
+}
+
+.safe-card {
+  border-left: 6px solid #2ecc71; /* Green for good */
+}
+
+.alert-card {
+  border-left: 6px solid #e74c3c; /* Red for danger */
+  background-color: #fff9f9;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+.card-header h3 {
+  margin: 0;
+  color: #2c3e50;
+}
+
+.machine-badge {
+  background-color: #ecf0f1;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  color: #34495e;
+}
+
+.vitals-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.vitals-grid p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.anomaly-box {
+  background-color: #fceceb;
+  color: #c0392b;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #fadbd8;
+}
+
+.anomaly-box ul {
+  margin: 8px 0 0 0;
+  padding-left: 20px;
+}
